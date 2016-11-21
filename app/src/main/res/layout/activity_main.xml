@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimary">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:hint="@string/write_here"
+        android:id="@+id/taskText"
+        android:background="#fff9c4"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/addButton"
+        android:layout_alignTop="@+id/addButton"
+        android:layout_above="@+id/removeButton" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add"
+        android:id="@+id/addButton"
+        android:background="@color/buttonColor"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="39dp"
+        android:layout_above="@id/removeButton"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:hint="@string/add_new_task"
+        android:id="@+id/showListView"
+        android:layout_gravity="top|center_vertical"
+        android:gravity="top|start"
+        android:background="@color/colorPrimary"
+        android:textIsSelectable="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+    </TextView>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/remove"
+        android:id="@+id/removeButton"
+        android:background="@android:color/holo_red_light"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
